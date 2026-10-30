@@ -1,0 +1,13 @@
+# Telegram Bot
+pyTelegramBotAPI>=4.14.0
+
+# LLM Services
+yandex-cloud-ml-sdk>=0.1.0
+qwen-api>=0.1.0
+google-generativeai>=0.3.0
+
+# Utilities
+python-dotenv>=1.0.0
+
+# Data handling
+# (json встроен в Python)

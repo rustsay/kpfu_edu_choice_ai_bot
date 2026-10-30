@@ -1,0 +1,9 @@
+# Образ подставляется из CI (IMAGE/TAG)
+# Локально: docker compose build && IMAGE=kpfu-edu-bot TAG=latest docker compose up -d
+services:
+  bot:
+    build: .
+    image: ${IMAGE:-kpfu-edu-bot}:${TAG:-latest}
+    env_file: .env
+    restart: unless-stopped
+    container_name: kpfu-edu-bot
